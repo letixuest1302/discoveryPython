@@ -6,14 +6,14 @@
 #    By: lesainz- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/16 13:54:33 by lesainz-          #+#    #+#              #
-#    Updated: 2025/12/16 13:54:54 by lesainz-         ###   ########.fr        #
+#    Updated: 2025/12/18 11:54:58 by lesainz-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/usr/bin/env python3
 
 import sys
 
-if len(sys.argv) != 2:
+if len(sys.argv) > 2:
     print("none")
 else:
     print(sys.argv[1].lower())

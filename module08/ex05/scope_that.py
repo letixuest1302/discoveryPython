@@ -1,26 +1,21 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    string_are_arrays.py                               :+:      :+:    :+:    #
+#    scope_that.py                                      :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lesainz- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/16 17:14:11 by lesainz-          #+#    #+#              #
-#    Updated: 2025/12/17 11:36:42 by lesainz-         ###   ########.fr        #
+#    Created: 2025/12/18 10:46:37 by lesainz-          #+#    #+#              #
+#    Updated: 2025/12/18 10:48:04 by lesainz-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-#!/usr/bin/env python3
-import sys
+#ª/usr/bin/env python3
 
-if len(sys.argv) != 2:
-    print("none")
-else:
-    count = 0
-    for char in sys.argv[1]:
-        if char == 'z':
-            count += 1
+def add_one(x):
+    x += 1
+    print(x)
 
-        if count == 0:
-            print ("none")
-        else:
-            print("z" * count)
+number = 5
+print(number)
+add_one(number)
+print(number)

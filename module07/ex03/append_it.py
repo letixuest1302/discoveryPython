@@ -1,26 +1,22 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    string_are_arrays.py                               :+:      :+:    :+:    #
+#    append_it.py                                       :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lesainz- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/16 17:14:11 by lesainz-          #+#    #+#              #
-#    Updated: 2025/12/17 11:36:42 by lesainz-         ###   ########.fr        #
+#    Created: 2025/12/17 11:40:00 by lesainz-          #+#    #+#              #
+#    Updated: 2025/12/17 11:42:52 by lesainz-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/usr/bin/env python3
 import sys
 
-if len(sys.argv) != 2:
+args = sys.argv[1:]
+
+if len(args) == 0:
     print("none")
 else:
-    count = 0
-    for char in sys.argv[1]:
-        if char == 'z':
-            count += 1
-
-        if count == 0:
-            print ("none")
-        else:
-            print("z" * count)
+    for arg in args:
+        if arg.find("ism") == -1 or not arg.endswith("ism"):
+            print(arg + "ism")
